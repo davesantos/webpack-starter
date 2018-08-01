@@ -1,0 +1,18 @@
+{
+  "name": "webpack-starter",
+  "description": "A starter for webpack",
+  "devDependencies": {
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davesantos/webpack-starter.git"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/webpack --watch",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  }
+}
