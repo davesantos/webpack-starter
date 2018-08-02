@@ -1,0 +1,52 @@
+//------------------------------------------------------------
+//
+//  Base
+//
+//------------------------------------------------------------
+
+@import 'base/normalize'
+
+//------------------------------------------------------------
+//
+//  Modules
+//
+//------------------------------------------------------------
+
+@import 'modules/mixins'
+
+//------------------------------------------------------------
+//
+//  Global
+//
+//------------------------------------------------------------
+
+@media screen and (min-width: 320px)
+  \:root
+    font-size: calc(16px + (24 - 16) * (100vw - 320px)/(1600 - 320))
+    line-height: 1.5
+
+@media screen and (min-width: 1000px)
+  \:root
+    font-size: 22px
+
+a
+  text-decoration: none
+
+img, video, object, embed
+  max-width: 100%
+  height: auto !important
+
+img
+  -ms-interpolation-mode: bicubic
+  vertical-align: middle
+
+//------------------------------------------------------------
+//
+//  Structure
+//
+//------------------------------------------------------------
+
+@media only screen and (min-width: 768px)
+  body
+// @media only screen and (min-width: 1030px)
+// @media only screen and (min-width: 1240px)
