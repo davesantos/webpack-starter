@@ -6,5 +6,9 @@ module.exports =  {
   output: {
     path: path.join(__dirname, 'js'),
     filename: 'bundle.js'
+  },
+  devServer: {
+    // contentBase: path.join(__dirname, 'js')
+    stats: 'errors-only'
   }
 };
