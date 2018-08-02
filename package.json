@@ -12,9 +12,8 @@
     "url": "https://github.com/davesantos/webpack-starter.git"
   },
   "scripts": {
-    "start": "node_modules/.bin/webpack --watch",
+    "start": "node_modules/.bin/webpack-dev-server",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "serve": "webpack-dev-server"
+    "build": "webpack --mode production"
   }
 }
