@@ -2,6 +2,12 @@
   "name": "webpack-starter",
   "description": "A starter for webpack",
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
     "webpack": "^4.16.3",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
@@ -15,5 +21,9 @@
     "start": "node_modules/.bin/webpack-dev-server",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "ajv": "^6.5.3",
+    "jshint": "^2.9.6"
   }
 }
