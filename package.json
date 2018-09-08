@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "ajv": "^6.5.3",
-    "jshint": "^2.9.6"
+    "jshint": "^2.9.6",
+    "normalize.css": "^8.0.0"
   }
 }
