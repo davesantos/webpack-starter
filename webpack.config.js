@@ -16,6 +16,21 @@ module.exports =  {
     // contentBase: path.join(__dirname, 'js')
     stats: 'errors-only'
   },
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      title: 'Webpack Starter',
+      // minify: {
+      //   collapseWhitespace: true
+      // },
+      hash: true,
+      template: './index.html'
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    })
+  ],
   module: {
     rules: [
       {
@@ -34,20 +49,5 @@ module.exports =  {
        ]
       }
     ]
-  },
-  plugins: [
-    new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin({
-      title: 'Webpack Starter',
-      // minify: {
-      //   collapseWhitespace: true
-      // },
-      hash: true,
-      template: './index.html'
-    }),
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    })
-  ]
+  }
 };
