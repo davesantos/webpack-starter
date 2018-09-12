@@ -21,7 +21,8 @@ module.exports =  {
     new HtmlWebpackPlugin({
       title: 'Webpack Starter',
       // minify: {
-      //   collapseWhitespace: true
+      //   collapseWhitespace: true,
+      //   preserveLineBreaks: true
       // },
       hash: true,
       template: './index.html'
